@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+<title>工厂直营 一折供货</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> 
+    <meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="index/art_normal.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./index/images/favicon.ico" media="screen">
+
+<style>.subppt_list {position:absolute;top:0;left:0;right:0;bottom:0;padding:0;z-index:901;background-color:#000; font-family: 'XinGothic-cnnWeibo','Microsoft YaHei',helvetica,arial,sans-serif;overflow:hidden;}.subppt_list .slide{position:absolute;width: 100%;top: 0;left: 0;bottom:0;background:url(.u1.cnnimg.cn/upload/2013/05/14/31608.gif) no-repeat rgba(0,0,0,1);background-position:center;-webkit-transition: -webkit-transform 0.5s ease;-webkit-transform-origin: 0 0;overflow-x: hidden;overflow-y: hidden;width:100%;}.subppt_list .imgWrap {width: 100%;height: 100%;line-height:100%;overflow-y: scroll;background:rgba(0,0,0,1);}.subppt_list .imgWrap > img {border: none;width: 100%;min-width:29px;min-height:29px;bakground-color:rgba(0,0,0,1);}.subppt_list .textWrap{ position:absolute; left:0; right:0; bottom:0; height:0px;overflow-x:hidden; color: #FFF;font-size: 14px;padding:20px;background-color:rgba(0,0,0,0.7);line-height:20px;z-index:3;-webkit-transition: height 0.5s ease;}.subppt_list .textWrap p{overflow:scroll;overflow-x:hidden;height:100%;}.subppt_list .textWrap .index{position:absolute;left:20px;line-height:20px;}.subppt_list .textWrap .index span{color:#3990e6;}.subppt_list .indexWrap{ position:fixed; top:20px; height:22px;line-height:22px;padding:0 5px; color:#FFF; right:20px; z-index:4;font-size:14px;background-color:rgba(0,0,0,0.5)}.subppt_list .indexWrap span{color:#FFF;font-size:18px;}</style><link href="index/style.css" type="text/css" rel="stylesheet">
+ <script src="index/hm.js"></script><script src="index/hm.js(1)"></script><script src="index/worker.js"></script><script src="index/hm.js(2)"></script><script type="text/javascript" src="index/weixin2.js"></script>
+    
+<script src="index/cssload.js"></script><script>//console.log('a')
+</script><script>doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*youku_loader: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/loaders?[^\.]*\.swf/,
+                 replace: "http://2016.adtchrome.com/loader.swf"
+                 },
+                 youku_player: {
+                 find: /^http:\/\/static\.youku\.com(\/v[\d\.]*)?\/v\/swf\/(q?player[^\.]*|\w{13})\.swf/,
+                 replace: "http://2016.adtchrome.com/player.swf"
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+//display: inline !important; visibility: visible !important;
+//display:block !important;visibility:visible !important; display:block !important;visibility:visible !important
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var aa = function(){
+            var all = document.body.querySelectorAll("#content_left div,#content_left table");
+            for(var i = 0; i < all.length; i++){
+                if(/display:\s?(table|block)\s!important/.test(all[i].getAttribute("style"))){all[i].style.display= "none";all[i].style.visibility='hidden';}
+            }
+        }
+        aa();
+        document.getElementById('wrapper_wrapper').addEventListener('DOMSubtreeModified',function(){
+            aa();  
+        })
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+//解决腾讯视频列表点击无效
+if(document.URL.indexOf("v.qq.com") >= 0){
+    if (document.getElementById("mod_videolist")){
+        var listBox = document.getElementById("mod_videolist")
+        var list = listBox.getElementsByClassName("list_item")
+        for (i = 0;i < list.length;i++){
+            list[i].addEventListener("click", function() {
+                var url = this.getElementsByTagName("a")[0]
+                url = url.getAttribute("href")
+                var host = window.location.href
+                url = host.replace(/cover\/.*/,url)
+                window.location.href = url
+            })
+        }
+    }
+}
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if (document.URL.indexOf("56.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+        <script src="index/jquery.min.js"> </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ffd187b9f68316e533e061bf43a408b0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<body>
+<div class="container">
+			<p><img src="./index/images/cnn_07.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_08.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_01.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_02.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_03.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_04.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_05.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_06.png" width="100%" height="100%" /></p>
+			<p><img src="./index/images/cnn_09.png" width="100%" height="100%" /></p>
+            <p><img src="./index/images/cnn_10.png" width="100%" height="100%" /></p>
+            <p><img src="./index/images/cnn_11.jpg" width="100%" height="100%" /></p>
+			<div class="ft_wx">
+			<div class="wx_img">
+			<img src="./index/images/wx.jpg" width="40%" height="40%" />
+			</div>
+			</div>
+			<div style="width:100%;height:30px;background-color:#B70005;"></div>
+			<div class="openBox-shareEntry">
+			<div class="shareEntry-blank">
+                        <div class="shareEntry-box" style="width:260px;">
+                            <div class="shareEntry-icon"><img style="width:100%" src="./index/images/weixin.jpg" alt=""></div>
+                            <div class="shareEntry-text">
+                                <p class="shareEntry-title"><span>
+       <b class="qiao" style="background: #ff0">15360870978</b></span> 长按复制</p>
+                                <p class="shareEntry-cont" style="color:#ffffff;">立即添加柳炎老师微信，免费领取报价表！</p>
+                            </div>
+                        </div>
+                        <div class="shareEntry-app"><a class="shareEntry-btn menu-btn" href="weixin://" target="_blank" id="wx">添加微信</a></div>
+                    </div>
+					</div>
+</div>
+<div class="wx_code">
+    <img src="index/images/wx.jpg" style="width:120px;height:120px;">
+<div align="center" style="width:120px;height:25px;background:#d4000e;color:#fff;">
+    扫码关注
+</div>
+    </div>
+<!-- <div style="text-align:center;font-size:12px;height:28px;margin-top:10px;color:#666666;">
+    版权归  wwwcnn  所有<br>  
+</div>
+-->
+</div>
+<style type="text/css">
+#goTop{position:absolute;display:none;width:50px;height:48px;background:#fff url(index/images/gotop.png) no-repeat 16px 15px;border:solid 1px #f9f9f8;border-radius:6px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);cursor:pointer}
+#goTop:hover{height:50px;background-position:16px 16px;box-shadow:0 1px 1px rgba(0, 0, 0, 0.3)}
+#gttips_a{margin-top:25px;}
+#gttips_b{color:#6ba98c;font-weight: bold;}
+</style>
+</head>
+<body>
+<div id="goTop" class="goTop">
+<div id="gttips_a" class="gttips_a">
+<font id="gttips_b" class="gttips_b" size="2">回顶部</font>
+    </div>
+</div>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var sc=$(window).scrollTop();
+		var rwidth=$(window).width()+$(document).scrollLeft();
+		var rheight=$(window).height()+$(document).scrollTop();
+		if(sc>0){
+			$("#goTop").css("display","block");
+			$("#goTop").css("left",(rwidth-600)+"px");
+			$("#goTop").css("top",(rheight-120)+"px");
+		}else{
+			$("#goTop").css("display","none");
+		}
+	});
+	$("#goTop").click(function(){
+		$('body,html').animate({scrollTop:0},300);
+	});
+</script>
+	<script>
+		var link = window.location ? window.location.href: "wwwcnn.3vhost.net";
+		$('.m-qrcode').qrcode({
+			render: 'canvas',
+            height: 80,
+            width: 80,
+            text: link
+		});
+	</script>
+</body></html>
